@@ -1,6 +1,13 @@
 # dotfiles
 This repo contains my preferred settings and configuration files for different tools I use for development work.
 
+## Install Nerd fonts
+Download Nerd fonts from: https://www.nerdfonts.com/
+
+Personally, I use the following fonts:
+* JetBrainsMono
+* FiraMono
+
 ## Install Starship (With Bash)
 For details check out: https://starship.rs
 
