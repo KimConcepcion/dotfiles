@@ -1,7 +1,7 @@
 # dotfiles
 This repo contains my preferred settings and configuration files for different tools I use for development work.
 
-## Install Starship (This is for bash)
+## Install Starship (With Bash)
 For details check out: https://starship.rs
 
 1. Download & install starship binary
