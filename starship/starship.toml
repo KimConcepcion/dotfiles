@@ -10,14 +10,37 @@ $all[╰─](238)$character"""
 
 # Change the default prompt characters
 [character]
-success_symbol = "[](238)"
-error_symbol = "[](238)"
+success_symbol = "[✅](238)"
+error_symbol = "[❌](238)"
 
 # Shows an icon that should be included by zshrc script based on the distribution or os
 [env_var.STARSHIP_DISTRO]
 format = '[$env_value](bold white)'  # removed space between distro and rest for pwsh
 variable = "STARSHIP_DISTRO"
 disabled = false
+
+[os]
+#format = "on [($name )]($style)"
+format = '[$symbol](bold white) '
+#style = "bold blue"
+disabled = false
+
+[os.symbols]
+Windows = ''
+Arch = '󰣇'
+Ubuntu = ''
+Macos = '󰀵'
+
+[battery]
+full_symbol = '🔋 '
+charging_symbol = '⚡️ '
+discharging_symbol = '💀 '
+
+[memory_usage]
+disabled = false
+threshold = -1
+symbol = '📶 '
+style = 'bold yellow'
 
 # Shows the username
 [username]
@@ -28,19 +51,17 @@ disabled = true  # disable in powershell
 show_always = false
 
 [directory]
-truncation_length = 3
-truncation_symbol = "…/"
-home_symbol = " ~"
-read_only_style = "197"
+#truncation_length = 3
+#truncation_symbol = "…/"
+home_symbol = "🏠 ~"
+read_only_style = "bold 197"
 read_only = "  "
 format = "at [$path]($style)[$read_only]($read_only_style) "
 
 [git_branch]
-symbol = " "
+symbol = " "
 format = "on [$symbol$branch]($style) "
-truncation_length = 4
-truncation_symbol = "…/"
-style = "bold green"
+style = "bold italic green"
 
 [git_status]
 format = '[\($all_status$ahead_behind\)]($style) '
@@ -54,15 +75,19 @@ behind = "⇣${count}"
 stashed = " "
 modified = " "
 staged = '[++\($count\)](green)'
-renamed = "襁 "
+renamed = "» "
 deleted = " "
 
-[vagrant]
-format = "via [ vagrant $version]($style) "
+[python]
+symbol = "🐍 "
+python_binary = "python3"
+pyenv_version_name = true
 
 [docker_context]
-format = "via [ $context](bold blue) "
+format = "via [🐳 $context](bold blue) "
 
-[python]
-symbol = " "
-python_binary = "py"
+#[azure]
+#disabled = false
+#format = "on [$symbol($username)]($style) "
+#symbol = "󰠅 "
+#style = "blue bold"
