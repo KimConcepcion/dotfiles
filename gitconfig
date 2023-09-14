@@ -1,0 +1,16 @@
+[user]
+	name = <>
+	email = <>
+
+[url "git@github.com:KimConcepcion"]
+	insteadOf = kim:
+
+[alias]
+	co = checkout
+	br = branch
+	st = status
+	cm = commit
+	clonr = clone --recursive
+	lola = log --graph --pretty=oneline --all
+	shit = shortlog -s -n
+	nomerge-cnt-head = rev-list --no-merges --count HEAD
