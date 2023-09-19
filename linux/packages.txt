@@ -1,0 +1,10 @@
+# APT Packages
+
+# Tools
+git
+nano
+net-tools
+inotify-tools
+gcc-multilib
+
+# Libraries
