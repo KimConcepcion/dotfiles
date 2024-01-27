@@ -1,5 +1,5 @@
 # dotfiles
-This repo contains my preferred settings and configuration files for different tools I use for development work.
+This repo contains my preferred settings and configuration files for different tools I use for daily development work.
 
 ## Install Nerd fonts
 Download Nerd fonts from: https://www.nerdfonts.com/
