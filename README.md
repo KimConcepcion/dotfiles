@@ -1,14 +1,24 @@
 # dotfiles
 This repo contains my preferred settings and configuration files for different tools I use for daily development work.
 
-## Install Nerd fonts
+## Linux
+The linux folder contains some of the scripts I use daily, when working in a Linux environment.
+
+### Install APT packages
+I have gathered the typical APT packages I use in a __packages.txt__ file.
+You can use the __xargs__ cmd to read the packages.txt file and input it to the __apt__ cmd
+```
+$ xargs sudo apt-get -y install < packages.txt
+```
+
+## Nerd fonts
 Download Nerd fonts from: https://www.nerdfonts.com/
 
 Personally, I use the following fonts:
 * JetBrainsMono
 * FiraMono
 
-## Install Starship (With Bash)
+## Starship (With Bash)
 For details check out: https://starship.rs
 
 1. Download & install starship binary
